@@ -2,6 +2,10 @@
   overflow-x:hidden;
   height: 100%;
 } */
+/* html, body {
+  overflow-x:hidden;
+  height: 100%;
+} */
 
 * {
   margin: 0;
@@ -194,7 +198,7 @@ h2 {
 
 .hero-desc {
   font-size: 1rem;
-  color: #444;
+  color:#ddd;
   line-height: 1.6;
   margin-bottom: 1.5rem;
 }
@@ -767,6 +771,25 @@ color:#000
   .contact-info {
     flex: 1 1 100%;
   }
+}
+
+#scrollTopBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1000;
+  display: none;
+  font-size: 1.5rem;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 50%;
+  background-color: #2e8b57;
+  color: white;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+#scrollTopBtn:hover {
+  background-color:#2e8b57;
 }
 
 

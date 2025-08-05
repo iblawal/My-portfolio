@@ -136,3 +136,20 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+// Scroll-to-top button functionality
+const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+window.addEventListener("scroll", () => {
+  scrollTopBtn.style.display = window.scrollY > 300 ? "block" : "none";
+});
+
+scrollTopBtn.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+// AOS Initialization (Animation on Scroll)
+AOS.init({
+  duration: 1000,
+  once: true,
+});
